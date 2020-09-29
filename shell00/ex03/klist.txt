@@ -1,0 +1,5 @@
+Credentials cache: API:1E9AE4DF-15E5-48F2-B845-795AD8108446
+        Principal: nvasilev@42.FR
+
+  Issued                Expires               Principal
+Sep  7 12:40:58 2020  Sep 14 12:40:47 2020  krbtgt/42.FR@42.FR
