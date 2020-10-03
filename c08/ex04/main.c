@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 
 	str = ft_strs_to_tab(argc, argv);
 	i = 0;
-	while (i < argc)
+	while (str[i].str)
 	{
 		printf("%d\n", str[i].size);
 		printf("%s\n", str[i].str);

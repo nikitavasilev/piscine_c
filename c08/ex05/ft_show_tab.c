@@ -6,7 +6,7 @@
 /*   By: nvasilev <nvasilev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/29 21:39:58 by nvasilev          #+#    #+#             */
-/*   Updated: 2020/09/29 22:04:36 by nvasilev         ###   ########.fr       */
+/*   Updated: 2020/09/30 14:30:37 by nvasilev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	ft_show_tab(struct s_stock_str *par)
 	unsigned int i;
 
 	i = 0;
-	while(par[i].str)
+	while (par[i].str)
 	{
 		ft_putstr(par[i].str);
 		ft_putchar('\n');

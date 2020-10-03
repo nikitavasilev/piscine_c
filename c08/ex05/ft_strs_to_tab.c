@@ -6,7 +6,7 @@
 /*   By: nvasilev <nvasilev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/29 20:56:08 by nvasilev          #+#    #+#             */
-/*   Updated: 2020/09/29 21:37:30 by nvasilev         ###   ########.fr       */
+/*   Updated: 2020/09/30 18:52:38 by nvasilev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,5 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 		ft_strcpy(str[i].copy, av[i]);
 		i++;
 	}
-	str[i].str = '\0';
 	return (str);
 }
