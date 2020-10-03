@@ -6,7 +6,7 @@
 /*   By: nvasilev <nvasilev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/28 15:28:22 by nvasilev          #+#    #+#             */
-/*   Updated: 2020/09/28 15:39:32 by nvasilev         ###   ########.fr       */
+/*   Updated: 2020/09/30 22:22:51 by nvasilev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int				ft_check_base(char *base)
 	{
 		if (base[i] == '-' || base[i] == '+')
 			return (0);
-		if (base[i] <= 32 && base[i] >= 127)
+		if (base[i] <= 32 || base[i] >= 127)
 			return (0);
 		j = i + 1;
 		while (base[j])
@@ -54,7 +54,7 @@ char			*atoi_escape(char *str, int *sign)
 	while ((*str == '+') || (*str == '-'))
 	{
 		if (*str == '-')
-			*sign = *sign * -1;
+			*sign = (*sign) * -1;
 		str++;
 	}
 	return (str);

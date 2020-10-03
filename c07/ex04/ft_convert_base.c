@@ -6,7 +6,7 @@
 /*   By: nvasilev <nvasilev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/28 15:28:16 by nvasilev          #+#    #+#             */
-/*   Updated: 2020/09/28 21:09:20 by nvasilev         ###   ########.fr       */
+/*   Updated: 2020/10/01 01:07:43 by nvasilev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,8 @@ char			*ft_convert_base(char *nbr, char *base_from, char *base_to)
 {
 	int res;
 
+	if (!nbr || !base_from || !base_to)
+		return (0);
 	if (!ft_check_base(base_from) || !ft_check_base(base_to))
 		return (0);
 	res = ft_atoi_base(nbr, base_from);
