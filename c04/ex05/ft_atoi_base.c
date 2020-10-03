@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi_base.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nvasilev <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: nvasilev <nvasilev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/17 16:18:31 by nvasilev          #+#    #+#             */
-/*   Updated: 2020/09/18 13:58:46 by nvasilev         ###   ########.fr       */
+/*   Updated: 2020/10/03 18:22:08 by nvasilev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int				ft_check_base(char *base)
 	{
 		if (base[i] == '-' || base[i] == '+')
 			return (0);
-		if (base[i] <= 32 && base[i] >= 127)
+		if (base[i] <= 32 || base[i] >= 127)
 			return (0);
 		j = i + 1;
 		while (base[j])
