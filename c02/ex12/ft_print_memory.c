@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_memory.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nvasilev <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: nvasilev <nvasilev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/11 13:11:13 by nvasilev          #+#    #+#             */
-/*   Updated: 2020/09/16 11:37:26 by nvasilev         ###   ########.fr       */
+/*   Updated: 2020/10/11 14:23:54 by nvasilev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	*ft_print_memory(void *addr, unsigned int size)
 	i = 0;
 	while ((unsigned int)i < size)
 	{
-		ft_dec_to_hex((unsigned int)&str[i], 1);
+		ft_dec_to_hex((long long)&str[i], 1);
 		ft_putchar(':');
 		j = -1;
 		while (++j < 16)
